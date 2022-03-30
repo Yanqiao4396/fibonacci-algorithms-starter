@@ -1,7 +1,7 @@
 # Fibonacci Algorithms
 
-## Assigned: Thursday, October 7, 2021
-## Due: Thursday, October 14, 2021
+## Assigned: Wednesday, March 30, 2022
+## Due: Wednesday, April 6, 2022
 
 After cloning this repository to your computer, please take the following steps:
 
@@ -15,6 +15,8 @@ After cloning this repository to your computer, please take the following steps:
   - Please note that the program will not work unless you add the required source code
   - Please refer to the `writing/reflection.md` file for all ways to run the program
 - Confirm that the program is producing the expected output
+- Please bear in mind that your program will produce different output than what is
+  evident on the course web site since each laptop will have different performance characteristics
 - Use a `docker run` command for your operating system to run GatorGrader
 - Please be aware that performance profiling in a Docker contain may not work as expected
 - Provide all of the required responses in the `writing/reflection.md` file
