@@ -99,6 +99,11 @@ def fibonaccicreator(
     # Reference:
     # https://pythonspeed.com/articles/estimating-memory-usage/
     console.print("Estimated peak memory according to the operating system:")
+    # TODO: you may need to adjust this function call in the print
+    # statement depending on your operating system. This should produce
+    # the correct output value for Linux. However, you may need to
+    # adjust the value of 1024 to be larger or smaller, depending on
+    # your operating system and the way in which it reports memory use.
     console.print("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
     console.print()
     # display a simplified execution time
