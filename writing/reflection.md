@@ -70,11 +70,11 @@ sure that you answer the following research questions:
 - RQ: Overall, what is the most memory efficient approach when using `fibonaccicreator`?
 - RQ: Overall, what are inappropriate approaches for computing Fibonacci numbers?
 
-TODO: Make sure that your responses explain WHY certain algorithms are faster!
-TODO: It is not sufficient to only explain WHICH algorithm is faster!
-TODO: Make sure that your responses explain WHY certain algorithms use less memory!
-TODO: It is not sufficient to only explain WHICH algorithm algorithm uses less memory!
-TODO: Make sure that you explain why certain algorithms are not suitable!
+TODO: Make sure that your responses explain WHY certain algorithms are faster.
+TODO: It is not sufficient to only explain WHICH algorithm is faster.
+TODO: Make sure that your responses explain WHY certain algorithms use less memory.
+TODO: It is not sufficient to only explain WHICH algorithm algorithm uses less memory.
+TODO: Make sure that you explain why certain algorithms are not suitable.
 
 ## Source Code
 
@@ -102,10 +102,10 @@ TODO: Provide a one-paragraph response that answers this question in your own wo
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
-### Leveraging what you know from all experiments conducted this semester, what are fast ways to perform computations?
+### Leveraging what you know from all experiments conducted this semester, what are "fast" ways to perform computations?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
-### Leveraging what you know from all experiments conducted this semester, what are slow ways to perform computations?
+### Leveraging what you know from all experiments conducted this semester, what are "slow" ways to perform computations?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
