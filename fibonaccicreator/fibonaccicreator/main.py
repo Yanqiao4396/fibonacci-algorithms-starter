@@ -10,6 +10,13 @@ import os
 import psutil  # type: ignore
 import time
 
+# TODO: Note that certain versions of Windows may not be able to
+# correctly use these modules in the resource package. If you are
+# running Windows and cannot get this to work, please talk with the
+# course instructor about an alternative arrangement. With that said,
+# this import and the use of its modules in this program should normally
+# work correctly on both the MacOS and Linux operating systems.
+
 from resource import getrusage, RUSAGE_SELF
 
 from fibonaccicreator import fibonacci
@@ -46,6 +53,7 @@ def fibonaccicreator(
     pyinstrument: bool = typer.Option(False, "--pyinstrument"),
 ):
     """Create the list of Fibonacci values in a specified approach."""
+    # TODO: make sure that you understand all the steps in this function
     # create a console for rich text output
     console = Console()
     # display the debugging output for the program's command-line arguments
