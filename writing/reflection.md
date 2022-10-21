@@ -47,7 +47,7 @@ experiments!
 
 TODO: Document and justify your choice for the `number` parameter.
 
-TODO: You can place all of the fenced code blocks in the following sections
+TODO: You can place all of the fenced code blocks in the following sections.
 
 #### Two outputs from running the `iterativetuple`
 
