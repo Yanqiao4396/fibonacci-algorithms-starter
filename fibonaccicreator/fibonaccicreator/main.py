@@ -31,6 +31,14 @@ cli = typer.Typer()
 # create a Profiler object to support timing program code segments
 profiler = Profiler()
 
+# TODO: Certain versions of MacOS do not support the calculation
+# of human-readable memory in bytes in a standard fashion. As such,
+# you may need to re-write one or more lines of source code in this
+# function if you notice that the program is reporting that it is
+# using either kilo-bytes (KB) or giga-bytes (GB) of memory. In
+# particular, using only a few KB of memory would probably be too little
+# and using many GB of memory would probably be too much!
+
 
 def format_bytes(size):
     """Format an output value in bytes in a human-readable fashion."""
