@@ -117,3 +117,7 @@ TODO: Provide a one-paragraph response that answers this question in your own wo
 ### Leveraging what you know from all experiments conducted this semester, what are "slow" ways to perform computations?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
+
+### What resources did you consult when completing this project? How did you find them? How did they help you?
+
+TODO: Provide a one-paragraph response that answers this question in your own words.
