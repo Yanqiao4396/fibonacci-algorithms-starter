@@ -1,10 +1,18 @@
 # Fibonacci Algorithms
 
-TODO: Make sure that you delete all of the TODO markers and either
-delete or rephrase all of the prompts inside of this file. When you are
-finished writing this reflection it should contain technical details,
-empirical results, and an analysis of the results that are suitable for
-publication on your professional web site.
+TODO: Make sure that you delete all of the TODO markers and either delete
+and/or rephrase all of the prompts inside of this file. When you are finished
+writing this reflection it should contain technical details, empirical results,
+and an analysis of the results that are suitable for publication on your
+professional web site. You should also make sure that there are no writing
+mistakes or mistakes in the use of Markdown inside of this file.
+
+TODO: Please note that there are certain packages used in the source code for
+this project that may not work and/or be supported on the Windows and MacOS
+operating systems. This is due to the fact that these operating systems do not
+provide certain standard features that are available in the Linux operating
+system. Please check with the course instructor if it seems that your operating
+system does not support certain packages or it yields unexpected results.
 
 ## Add Your Name Here
 
