@@ -1,5 +1,12 @@
 """Add test cases for the functions in the fibonacci module."""
 
+# TODO: Add comments to the test cases that explain how they work
+# TODO: The added comments should explain the:
+# - input
+# - output
+# - purpose
+# for each of the test cases
+
 import sympy
 
 
