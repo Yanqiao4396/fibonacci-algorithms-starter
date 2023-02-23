@@ -8,7 +8,7 @@ professional web site. You should also make sure that there are no writing
 mistakes or mistakes in the use of Markdown inside of this file.
 
 TODO: Please note that there are certain packages used in the source code for
-this project that may not work and/or be supported on the Windows and MacOS
+this project that may not work and/or be fully supported on the Windows and MacOS
 operating systems. This is due to the fact that these operating systems do not
 provide certain standard features that are available in the Linux operating
 system. Please check with the course instructor if it seems that your operating
