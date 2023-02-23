@@ -83,6 +83,8 @@ TODO: It is not sufficient to only explain WHICH algorithm is faster.
 TODO: Make sure that your responses explain WHY certain algorithms use less memory.
 TODO: It is not sufficient to only explain WHICH algorithm algorithm uses less memory.
 TODO: Make sure that you explain why certain algorithms are not suitable.
+TODO: If you had to modify the way in which `fibonaccicreator` collected either
+      execution time or memory overhead information, please explain and justify your changes.
 
 ## Source Code
 
