@@ -120,29 +120,34 @@ setup: |
       check: ConfirmFileExists
     - description: Complete all TODOs, remove the TODO markers, and rewrite comments for the reflection
       check: MatchFileFragment
+      objective: TODO
       options:
         fragment: TODO
         count: 0
         exact: true
     - description: Delete the 'Add Your Name Here' prompt in the reflection file
       check: MatchFileFragment
+      objective: delete default
       options:
         fragment: "Add Your Name Here"
         count: 0
         exact: true
     - description: Write a minimum number of meaningful words in the reflection
       check: CountFileWords
+      objective: meet minimal
       options:
         count: 500
         exact: false
     - description: Confirm that the markdown file has the correct number of headers
       check: CountMarkdownTags
+      objective: meet minimal
       options:
         tag: heading
         count: 18
         exact: false
     - description: Confirm that the markdown file has the correct number of fenced code blocks
       check: CountMarkdownTags
+      objective: meet minimal
       options:
         tag: code_block
         count: 10
@@ -160,23 +165,27 @@ setup: |
         exact: true
     - description: Delete the 'Add Your Name Here' prompt in the reflection file
       check: MatchFileFragment
+      objective: delete default
       options:
         fragment: "Add Your Name Here"
         count: 0
         exact: true
     - description: Write a minimum number of meaningful words in the reflection
       check: CountFileWords
+      objective: reflection
       options:
         count: 500
         exact: false
     - description: Confirm that the markdown file has the correct number of headers
       check: CountMarkdownTags
+      objective: reflection
       options:
         tag: heading
         count: 14
         exact: false
     - description: Confirm that the markdown file has the correct number of fenced code blocks
       check: CountMarkdownTags
+      objective: reflection
       options:
         tag: code_block
         count: 7
@@ -184,34 +193,42 @@ setup: |
 
 # run a command
 - description: Pass the source code formatting checks run by black
+  objective: lint
   command: cd fibonaccicreator && poetry run task black
 
 # run a command
 - description: Pass the linting checks run by flake8
+  objective: lint
   command: cd fibonaccicreator && poetry run task flake8
 
 # run a command
 - description: Pass the import checks run by isort
+  objective: lint
   command: cd fibonaccicreator && poetry run task isort
 
 # run a command
 - description: Pass the linting checks run by mypy
+  objective: lint
   command: cd fibonaccicreator && poetry run task mypy
 
 # run a command
 - description: Pass the linting checks run by pydocstyle
+  objective: lint
   command: cd fibonaccicreator && poetry run task pydocstyle
 
 # run a command
 - description: Pass the linting checks run by pylint
+  objective: lint
   command: cd fibonaccicreator && poetry run task pylint
 
 # run a command
 - description: Pass the linting checks run by pymarkdown
+  objective: lint
   command: cd fibonaccicreator && poetry run task markdownlint
 
 # run a command
 - description: Pass all of the Pytest test cases
+  objective: test
   command: cd fibonaccicreator && poetry run task test
 
 # run a command
@@ -221,6 +238,7 @@ setup: |
 # run the program and confirm correct number of lines in the output
 - description: Run the fibonaccicreator program and ensure that it produces a correct minimum number of lines with iterative tuple
   check: CountCommandOutput
+  objective: tuple
   options:
     command: cd fibonaccicreator && poetry run fibonaccicreator --number 1000 --approach iterativetuple
     count: 3
@@ -229,6 +247,7 @@ setup: |
 # run the program and confirm correct number of lines in the output
 - description: Run the fibonaccicreator program and ensure that it produces a correct numerical output label
   check: MatchCommandFragment
+  objective: tuple
   options:
     command: cd fibonaccicreator && poetry run fibonaccicreator --number 1000 --approach iterativetuple
     fragment: "1000th"
@@ -242,6 +261,7 @@ setup: |
 # run the program and confirm correct number of lines in the output
 - description: Run the fibonaccicreator program and ensure that it produces a correct minimum number of lines with iterative list
   check: CountCommandOutput
+  objective: list
   options:
     command: cd fibonaccicreator && poetry run fibonaccicreator --number 1000 --approach iterativelist
     count: 3
@@ -250,6 +270,7 @@ setup: |
 # run the program and confirm correct number of lines in the output
 - description: Run the fibonaccicreator program and ensure that it produces a correct numerical output label
   check: MatchCommandFragment
+  objective: list
   options:
     command: cd fibonaccicreator && poetry run fibonaccicreator --number 1000 --approach iterativelist
     fragment: "1000th"
@@ -259,5 +280,6 @@ setup: |
 # count number of commits in the GitHub repository
 - description: Have at least a specific minimum of commits in the GitHub repository
   check: CountCommits
+  objective: meet minimal
   options:
     count: 10
